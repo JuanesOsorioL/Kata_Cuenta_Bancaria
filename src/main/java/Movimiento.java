@@ -16,7 +16,6 @@ public class Movimiento {
             case "retiro":this.retiro = monto;break;
             default:this.transaccion = monto;break;
         }
-        return;
     }
 
     public LocalDate getFecha() {

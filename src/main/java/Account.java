@@ -8,7 +8,6 @@ public class Account {
     private double balance = 0;
     private ArrayList<Movimiento> movimientos =new ArrayList<>();
     private String historial = "";
-    private Object Transactions;
 
     public void deposit(int valor, String fecha) {
         balance+=valor;
@@ -35,8 +34,8 @@ public class Account {
         mostrar();
     }
 
-    private void statements(Movimiento m){
-        historial+=""+m.getFecha()+"     "+m.getDeposito()+"     "+m.getRetiro()+"     "+m.getBalance()+"\n";
+    private void statements(Movimiento movimiento){
+        historial+=""+movimiento.getFecha()+"     "+movimiento.getDeposito()+"     "+movimiento.getRetiro()+"     "+movimiento.getBalance()+"\n";
     }
 
     void mostrar(){
